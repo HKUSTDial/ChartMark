@@ -4,11 +4,19 @@
 
 Official repository for the paper *"ChartMark: A Structured Grammar for Chart Annotation"*.
 
+[![Homepage](https://img.shields.io/badge/🏠-Homepage-blue)](https://chartmark.github.io/)
+
 ![pipe_line](README.assets/pipe_line.png)
+
+## 📢News
+[May. 08, 2025] ChartMark [homepage](https://chartmark.github.io/) is publicly released!
+
+## 📎Documentation
+[See documentation and more examples here.](https://chartmark.github.io/)
 
 ## 📖Overview
 
-ChartMark is a **structured, language-agnostic grammar** for chart annotations that cleanly **decouples annotation semantics from visualization implementations**.
+[ChartMark](https://chartmark.github.io/) is a **structured, language-agnostic grammar** for chart annotations that cleanly **decouples annotation semantics from visualization implementations**.
 
 It represents both base **chart** properties (e.g., type, axes, data) and a list of annotations in a hierarchical JSON format. Each annotation is defined by its **task** (e.g., highlight, reference, summary), the **data** it uses (e.g., internal data points, derived aggregates, or external content), and the specific **operations** (including **targets** and visual **markers**) needed to realize that task. A toolkit can then **convert** this high-level JSON into executable specs for frameworks like Vega-Lite, ECharts, or D3.js.ChartMark Specification
 
@@ -31,7 +39,7 @@ In this repository, we provide a Python script to convert a ChartMark specificat
    See `examples/group_bar_chart.json` for a complete example. The file contains both chart definition and annotation specifications following the ChartMark grammar structure.
 
    ```json
-   # Structure of a ChartMark specification (see examples/group_bar_chart.json for details)
+   // Structure of a ChartMark specification (see examples/group_bar_chart.json for details)
    {
      "chart": {
        "title": "Annual Training Budget by Department (k USD)",
